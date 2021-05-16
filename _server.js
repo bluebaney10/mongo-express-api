@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 //const products = require('./productmock')
-var mongo_uri = "mongodb+srv://admin:blue805090@cluster0.iygdk.mongodb.net/node-api-101?retryWrites=true&w=majority";
+const mongo_uri = require('./config/mongo')
 
 mongoose.connect(mongo_uri,{useNewUrlParser:true})
 
